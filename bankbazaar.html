@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBAZAAR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container-fluid">
+        <section class="row">
+            <section class="header col-12 d-flex justify-content-between border border-1" id="navbar">
+                <div class="nav d-flex align-items-center justify-content-between">
+                    <img src="./Images/bankbazaar-logo.svg" alt="" srcset="" height="40px" class="logo-img" role="button">
+
+                    <div class="nav-left-left col-5 d-flex pt-1 text-white justify-content-between align-items-center pt-3 ps-2">
+                        <div class="dropdown" id="loansDropdown">
+                            <p role="button" class="dropdown-toggle me-2">LOANS</p>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Personal Loan</a>
+                                <a href="#" class="dropdown-item">Home Loan</a>
+                                <a href="#" class="dropdown-item">Car loan</a>
+                                <a href="#" class="dropdown-item">Two wheeler loan</a>
+                            </div>  
+                        </div>
+                        <div class="dropdown" id="cardsDropdown">
+                            <p role="button" class="dropdown-toggle me-2">CARDS</p>
+                            <div class="dropdown-menu CardsDropdown1">
+                                <a href="#" class="dropdown-item one">credit cards</a>
+                                <a href="#" class="dropdown-item one">debit cards</a>
+                            </div>
+                        </div>
+                        <div class="dropdown" id="investmentsDropdown2">
+                            <p role="button" class="dropdown-toggle">INVESTMENTS</p>
+                            <div class="dropdown-menu investmentDropdown1">
+                                <a href="#" class="dropdown-item two">Mutual funds</a>
+                                <a href="#" class="dropdown-item two">Fixed deposit</a>
+                                <a href="#" class="dropdown-item two">Savings account</a>
+                                <a href="#" class="dropdown-item two">Gold rate</a>
+                                <a href="#" class="dropdown-item two">Silver rate</a>
+                                <a href="#" class="dropdown-item two">Best RD rates</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="./Images/get free credit score.gif" onclick="handleFreeCreditScoreButtonClick()" class="nav-img ms-2" role="button">
+                </div>
+
+                    <div class="d-flex col-2 justify-content-between align-items-center pt-3 text-white">
+                        <p role="button"><i class="bi bi-geo-alt"></i>Track applications</p>
+                        <p role="button">Login</p>
+                        <p class="nav-bar-bars fs-3" role="button"><i class="bi bi-list"></i></p>
+                    </div>
+
+            </section>
+
+            <section class="col-12 p-0">
+                <div class="sec1 position-relative">
+                    <div class="sec1-bg d-flex justify-content-end">
+                        <img src="./Images/sec-1 bg.gif" alt="" srcset="" class="col-10" height="100%" width="90%" role="button">
+                    </div>
+
+                    <div class="">
+                        <img src="./Images/sec-1 left img.png" alt="" srcset="" class="position-absolute top-0" width="350vw" height="100%" role="button">
+                    </div>
+
+                    <div class="sec1-text position-absolute top-0 end-0 me-5">
+                        <h4>Get your latest Experian credit</h4>
+                        <h4 class="ms-5"> report for free here</h4>
+                        <img src="./Images/click your free credit score.gif" alt="" srcset="">
+                        <h6 class="ms-5">2,00,00,000+ people have got their</h6>
+                        <h6 class="sec1-last-text">credit scores for FREE!!</h6>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="sec1-bottom col-12 border border-1 d-flex align-items-center">  
+                <section class="col-9 d-flex justify-content-center justify-content-evenly m-auto align-items-center text-white" id="sec1-bottom-cards">
+                    <h6 role="button"><i class="bi bi-arrow-repeat fs-4 me-1"></i>50+ Banks</h6>
+                    <h6 role="button"><i class="bi bi-stopwatch fs-4 me-1"></i>Contactless KYC & Paperless Approval</h6>
+                    <h6 role="button"><i class="bi bi-person-circle fs-4 me-1"></i>5,00,00,000+ Happy Customers</h6>
+                    <h6 role="button"><i class="bi bi-gift fs-4 me-1"></i>Exclusive Offers & Rates</h6>
+                </section>
+
+            </section>
+
+            <section class="cards col-12 m-0 p-0 d-flex" id="productSection">
+                <div class="card col-2 d-flex justify-content-center align-items-center" role="button">
+                    <div><i class="cards-icon bi bi-credit-card fs-2"></i></div>
+                    <p class="cards-text">Credit card</p>
+                </div>
+
+                <div class="card col-2 d-flex justify-content-center align-items-center" role="button">
+                    <div><i class="cards-icon bi bi-heart fs-2"></i></div>
+                    <p class="cards-text">Personal loan</p>
+                </div>
+
+                <div class="card col-2 d-flex justify-content-center align-items-center" role="button">
+                    <div><img src="./Images/get free credit score.gif" alt="" srcset=""></div>
+                    <p class="cards-text">Credit score</p>
+                </div>
+
+                <div class="card col-2 d-flex justify-content-center align-items-center" role="button">
+                    <div><i class="cards-icon bi bi-house-door fs-2"></i></div>
+                    <p class="cards-text">Home loan</p>
+                </div>
+
+                <div class="card col-2 d-flex justify-content-center align-items-center" role="button">
+                    <div><i class="cards-icon bi bi-car-front-fill fs-2"></i></div>
+                    <p class="cards-text">Car loan</p>
+                </div>
+
+                <div class="card col-2 d-flex justify-content-center align-items-center" role="button">
+                    <div><i class="cards-icon bi bi-calculator fs-2"></i></div>
+                    <p class="cards-text">Calculators</p>
+                </div>
+
+            </section>
+            <section class="col-12 card-section" id="productSection">
+                </section>
+
+            <section class="col-12 latest-credit-score">
+                <div class="d-flex justify-content-center mt-5 mb-4">
+                    <div class="d-block ">
+                    <h3>Get your latest Credit Score, FREE</h3>
+                    <h6 class="ms-5 text-secondary">One powerful number that puts you in control</h6>
+                    </div>
+
+                </div>
+
+                <article class="d-flex justify-content-between col-7 m-auto">
+                    <div class=""><img src="./Images/Get your latest Credit Score, FREE.png" alt="" srcset="" height="350vh"></div>
+                    <ul class="mt-5 latest-credit-score-text"><li><p class="fw-bold">Increase chances of application approval</p>
+                        <p> A score of 750+ boosts your chances of getting a loan/Credit Card</p></li>
+                        
+                        <li><p class="fw-bold">Better offers</p>
+                        <p>The better your score, the more offers you'll be eligible for</p></li>
+                        
+                        <li><p class="fw-bold">Take charge of your finances</p>
+                        <p>Understanding your score helps you take the right next steps</p></li>
+                        <img src="./Images/click your free credit score.gif" alt="" srcset="" role="button">
+                    </div>
+
+                </article>
+
+            </section>
+
+            <section class="col-12 card-section">
+                <div class="d-flex justify-content-center mt-5 mb-4">
+                    <div class="d-block ">
+                    <h3 class="ms-5 ps-5">Trending Products</h3>
+                    <h6 class="text-secondary">Our picks for the hottest offers and coolest deals all in one place</h6>
+                    </div>
+                </div>
+
+                <section class="card-section-article d-flex flex-wrap justify-content-center justify-content-evenly">
+                <article class="cardss card flex-wrap border border-0 mb-4" role="button">
+                    <div class="zoomable-image">
+                        <img src="./Images/credit-card.png" alt="" srcset="" id="trendingImage">
+                    </div>
+
+                    <div class="card-text">
+                        <h5 class="card-title">Credit Cards</h5>
+                        <p class="card-text">The best of lifetime-free, cashback cards &amp; more with contactless KYC process.</p>
+                    </div>
+
+                </article>
+
+                <article class="cardss card flex-wrap border border-0 mb-4" role="button">
+                    <div class="zoomable-image">
+                        <img src="./Images/quick-personal-loans.png" alt="" srcset="">
+                    </div>
+
+                    <div class="card-text">
+                        <h5 class="card-title">Credit Cards</h5>
+                        <p class="card-text">The best of lifetime-free, cashback cards &amp; more with contactless KYC process.</p>
+                    </div>
+
+                </article>
+
+                <article class="cardss card flex-wrap border border-0 mb-4" role="button">
+                    <div class="zoomable-image">
+                        <img src="./Images/frre-credit-score.png" alt="" srcset="">
+                    </div>
+
+                    <div class="card-text">
+                        <h5 class="card-title">Credit Cards</h5>
+                        <p class="card-text">The best of lifetime-free, cashback cards &amp; more with contactless KYC process.</p>
+                    </div>
+
+                </article>
+
+                <article class="cardss card flex-wrap border border-0 mb-4" role="button">
+                    <div class="zoomable-image">
+                        <img src="./Images/Finance-calculator.png" alt="" srcset="">
+                    </div>
+
+                    <div class="card-text">
+                        <h5 class="card-title">Credit Cards</h5>
+                        <p class="card-text">The best of lifetime-free, cashback cards &amp; more with contactless KYC process.</p>
+                    </div>
+
+                </article>
+
+                <article class="cardss card flex-wrap border border-0 mb-4" role="button">
+                    <div class="zoomable-image">
+                        <img src="./Images/gatewaypersonal-finance-v1.png" alt="" srcset="">
+                    </div>
+
+                    <div class="card-text">
+                        <h5 class="card-title">Credit Cards</h5>
+                        <p class="card-text">The best of lifetime-free, cashback cards &amp; more with contactless KYC process.</p>
+                    </div>
+
+                </article>
+
+                <article class="cardss card flex-wrap border border-0 mb-4" role="button">
+                    <div class="zoomable-image">
+                        <img src="./Images/homeloan.png" alt="" srcset="">
+                    </div>
+
+                    <div class="card-text">
+                        <h5 class="card-title">Credit Cards</h5>
+                        <p class="card-text">The best of lifetime-free, cashback cards &amp; more with contactless KYC process.</p>
+                    </div>
+
+                </article>
+
+            </section>
+
+            </section>
+
+            <section class="why-bb bg-info ">
+                <div class="d-flex justify-content-center mt-5 mb-4">
+                    <div class="d-block ">
+                    <h3 class="ms-5 ps-5">Why BankBazaar</h3>
+                    <h6 class="text-secondary">There's more than one reason to sign up with confidence</h6>
+                    </div>
+
+                </div>
+
+                <img src="./Images/Why BankBazaar.png" alt="" width="100%" height="450vh" role="button">
+            </section>
+
+            <section class="why-bb-bottom col-12 border border-1 d-flex align-items-center">
+                <section class="col-9 d-flex justify-content-center justify-content-evenly m-auto align-items-center text-white">
+                    <div>
+                        <img src="./Images/patners-v6.png" alt="">
+                    </div>
+
+                </section>
+
+            </section>
+            
+            <footer class="footer-sec1 col-12 d-flex align-items-center">
+                <section class="col-9 d-flex justify-content-center justify-content-evenly m-auto align-items-center text-white">
+                    <h6 class="fw-light text-secondary" role="button">Credit Cards</h6>
+                    <h6 class="fw-light text-secondary" role="button">Personal Loan</h6>
+                    <h6 class="fw-light text-secondary" role="button">Investments</h6>
+                    <h6 class="fw-light text-secondary" role="button">Savings Account</h6>
+                    <h6 class="fw-light text-secondary" role="button">Saving Schemes</h6>
+                    <h6 class="fw-light text-secondary" role="button">Life Insurance</h6>
+                    <h6 class="fw-light text-secondary" role="button">Health Insurance</h6>
+            </footer>
+
+            <nav class="footer-nav d-flex justify-content-center text-white border border-1 border-secondary">
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary" class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+            </nav>
+
+            <section class="footer-sec-2 text-white d-flex justify-content-center align-items-center pt-3"><p>Others : CIBIL | Tax Bank | IFSC Code | Indian Holidays | Saving Schemes | In The News</p></section>
+            <section class="footer-img"><img src="./Images/footer.png" alt="" width="" class="footer-img-img"></section>
+            
+        </section>
+
+    </section>
+
+    <script>
+        function handleFreeCreditScoreButtonClick() {
+        alert("Get your free credit score!");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        dropdowns.forEach(function (dropdown) {
+            const button = dropdown.querySelector(".dropdown-toggle");
+            const menu = dropdown.querySelector(".dropdown-menu");
+
+            dropdown.addEventListener("mouseover", function () {
+                menu.classList.add("show");
+            });
+
+            dropdown.addEventListener("mouseout", function () {
+                menu.classList.remove("show");
+            });
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const sec1 = document.querySelector('.sec1');
+
+        const newImage = document.createElement('img');
+        newImage.src = './Images/one_tap_login_desktop_new_v6.gif';
+        newImage.classList.add('sec1-new-image');
+
+        sec1.appendChild(newImage);
+
+        sec1.addEventListener('click', function (event) {
+            if (event.target !== newImage) {
+                sec1.removeChild(newImage);
+            }
+        });
+    });
+    const userName = localStorage.getItem('userName');
+    if (!userName) {
+        const promptName = prompt('Please enter your name:');
+        localStorage.setItem('userName', promptName);
+    }
+
+    if (userName) {
+        const navLogin = document.querySelector('.nav-left-left');
+        const userNameDisplay = document.createElement('p');
+        userNameDisplay.textContent = `Welcome, ${userName}`;
+        userNameDisplay.classList.add('fw-bold', 'text-white', 'ms-3',);
+        navLogin.appendChild(userNameDisplay);
+    }
+    </script>
+</body>
+</html>
